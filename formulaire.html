@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAIRE LUXANT</title>
+</head>
+<body>
+    <h1>FORMULAIRE LUXANT</h1>
+    <form method="get" action="/cgi-bin/programme.cgi">
+        <img src="Images/Luxant_Innov_Horizontal.png">
+        <p>Indiquer :</p>
+        <span>Nom : </span>
+        <input type="text" name="nom"></input>
+        <br>
+        <span>Prenom : </span>
+        <input type="text" name="prenom"></input>
+        <br>
+        <div class="genre">
+            <label for="genre-select">Genre : </label>
+            <select name="Genre" id="genre-select">
+                <option value="">--Choisissez une option--</option>
+                <option type="select" id="Femme" name="Genre" value="Femme">
+                <label for="Femme">Femme</label></option>
+                <option type="select" id="Homme" name="Genre" value="Homme">
+                <label for="Homme">Homme</label></option>
+            </select>
+        </div>
+        <div class="date">
+            <label>Date de naissance : </label>
+            <date>
+                <input type="date" id="date de naissance" name="date de naissance">
+        </div>
+        <div class="email">
+            <span>Email : (doit contenir un @ et un .)</span>
+            <email>
+                <input type="email" id="mail" name="mail" required pattern ="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        </div>
+        <div class="Profession">
+            <label for="profession-select">Profession : </label>
+            <select name="profession" id="profession-select">
+                <option value="">--Choisissez une option--</option>
+                <option type="select" id="enseignant" name="profession" value="enseignant">
+                <label for="enseignant">enseignant</label></option>
+                <option type="select" id="formateur" name="profession" value="formateur">
+                <label for="formateur">formateur</label></option>
+                <option type="select" id="étudiant" name="profession" value="étudiant">
+                <label for="étudiant">étudiant</label></option>
+            </select>
+        </div>
+        <input type="submit" value="Valider">
+        <input type="reset" value="Effacer">
+    </form>
+</body>
+</html> 
